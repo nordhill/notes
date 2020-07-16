@@ -1,6 +1,5 @@
 
 ### cat /etc/lsb-release
-
 ```
 DISTRIB_ID=ManjaroLinux
 DISTRIB_RELEASE=20.0.3
@@ -19,6 +18,10 @@ DISTRIB_DESCRIPTION="Manjaro Linux"
 
 ### aliases
 `touch ~/.bashrc_aliases`
+
 Add to .bashrc: `source  ~/.bashrc_aliases`
 
-`alias g="git"`
+```
+alias g="git"
+```
+
