@@ -13,7 +13,7 @@ DISTRIB_DESCRIPTION="Manjaro Linux"
 `mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim`
 
 ### apps to install
-`sudo pacman -S neovim`
+`sudo pacman -S neovim tmux`
 
 
 ### aliases
