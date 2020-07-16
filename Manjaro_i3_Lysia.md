@@ -7,6 +7,7 @@ DISTRIB_DESCRIPTION="Manjaro Linux"
 
 ### dotfiles location: /etc/skel/ skel="skeleton"
 `mkdir ~/.config/i3 && cp /etc/skel/.i3/config ~/.config/i3/config`
+
 `mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim`
 
 ### apps to install
