@@ -25,3 +25,8 @@ Add to .bashrc: `source  ~/.bashrc_aliases`
 alias g="git"
 ```
 
+### neovim init.vim
+```
+" Allow recursive search from where neovim was opened from
+set path=.,/usr/include,,**
+```
