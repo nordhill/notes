@@ -36,3 +36,9 @@ set path=.,/usr/include,,**
 " Reload opened files if external commands cause changes
 set autoread
 ```
+
+### scripts
+Watch for git log changes (no color)
+```
+watch -n 1  "sh -c 'git log | head -n $(tput lines)'"
+``` 
