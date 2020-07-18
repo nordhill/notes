@@ -29,4 +29,8 @@ alias g="git"
 ```
 " Allow recursive search from where neovim was opened from
 set path=.,/usr/include,,**
+" Don't wrap round to the first solution found when searching and navigating the results
+:set nowrapscan
+" Move to first search result when typing
+:set incsearch
 ```
