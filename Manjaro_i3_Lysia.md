@@ -35,6 +35,14 @@ set path=.,/usr/include,,**
 :set incsearch
 " Reload opened files if external commands cause changes
 set autoread
+" Use spaces instead of actual tabs when pressing tab
+set expandtab
+"
+set smartcase
+"
+set mouse a
+"
+set tabstop 2
 ```
 
 ### scripts
