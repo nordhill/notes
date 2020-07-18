@@ -33,4 +33,6 @@ set path=.,/usr/include,,**
 :set nowrapscan
 " Move to first search result when typing
 :set incsearch
+" Reload opened files if external commands cause changes
+set autoread
 ```
