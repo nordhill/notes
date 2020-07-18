@@ -50,3 +50,7 @@ Watch for git log changes (no color)
 ```
 watch -n 1  "sh -c 'git log | head -n $(tput lines)'"
 ``` 
+Keep colors even with watch script
+```
+git config color.status always
+```
