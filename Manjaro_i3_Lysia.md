@@ -49,6 +49,7 @@ set tabstop 2
 Watch for git log changes (no color)
 ```
 watch -n 1  "sh -c 'git log | head -n $(tput lines)'"
+watch --color git status
 ``` 
 Keep colors even with watch script
 ```
