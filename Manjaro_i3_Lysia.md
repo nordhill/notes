@@ -54,3 +54,6 @@ Keep colors even with watch script
 ```
 git config color.status always
 ```
+
+### resource links
+* Essential keybinds for vim/neovim https://www.youtube.com/watch?v=gZCXaF-Lmco
