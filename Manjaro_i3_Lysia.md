@@ -13,7 +13,7 @@ DISTRIB_DESCRIPTION="Manjaro Linux"
 `mkdir ~/.config/nvim && touch ~/.config/nvim/init.vim`
 
 ### apps to install
-`sudo pacman -S neovim tmux firefox`
+`sudo pacman -S neovim tmux firefox ripgrep`
 
 
 ### aliases
@@ -25,6 +25,12 @@ Add to .bashrc: `source  ~/.bashrc_aliases`
 alias g="git"
 ```
 
+### neovim plugins
+```
+ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                                                                      
+ Plug 'junegunn/fzf.vim'                                                                      
+```
+  
 ### neovim init.vim
 ```
 " Allow recursive search from where neovim was opened from
