@@ -65,6 +65,11 @@ set tabstop=2
 set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
+"Ignore in searchers
+set wildignore+=**/node_modules/**
+"Copy active file name to clipboard                                                                                                                             
+noremap <silent <F4> :let @+=expand("%:p")<CR>$    
+
 ```
 ### coc-settings.json (~/.config/nvim/coc-settings.json)
 ```
