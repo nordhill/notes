@@ -69,8 +69,36 @@ set shiftwidth=2
 set wildignore+=**/node_modules/**
 "Copy active file name to clipboard                                                                                                                             
 noremap <silent <F4> :let @+=expand("%:p")<CR>$    
+```
+
+####Experimentals
+``` 
+ Plug 'yuezk/vim-js'                                                                                                                                                              
+ Plug 'maxmellon/vim-jsx-pretty'                                                                                                                                                  
+ Plug 'airblade/vim-gitgutter'                                                                                                                                                    
+ Plug 'haya14busa/incsearch.vim'
+ 
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+" Copy active file name to clipboard                                                                                                                                                 
+noremap <silent> <F4> :let @+=expand("%:p")<CR>
+
+set wildignore+=**/node_modules/**   
+
+set incsearch
+map /  <Plug>(incsearch-forward)                                                                                                                                                     
+map ?  <Plug>(incsearch-backward)                                                                                                                                                    
+map g/ <Plug>(incsearch-stay) 
+
+command! -nargs=1 SS let @/ = '\V'.escape(<q-args>, '\')|set hlsearch      
+
+nnoremap <C-c><C-c> :noh<return> 
+
+syntax on
 
 ```
+
+
 ### coc-settings.json (~/.config/nvim/coc-settings.json)
 ```
 {
