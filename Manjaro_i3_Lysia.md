@@ -28,11 +28,15 @@ alias g="git"
 ### neovim plugins
 ```
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                                                                      
- Plug 'junegunn/fzf.vim'                                                                      
+ Plug 'junegunn/fzf.vim'
+ 
+ 
 ```
   
 ### neovim init.vim
 ```
+" Use clipboard for yanking, copy and pasting
+set clipboard=unnamedplus
 " Allow recursive search from where neovim was opened from
 set path=.,/usr/include,,**
 " Don't wrap round to the first solution found when searching and navigating the results
@@ -45,10 +49,17 @@ set autoread
 set expandtab
 "
 set smartcase
-"
+" allow using mouse in vim
 set mouse a
 "
-set tabstop 2
+filetype plugin indent on
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
 ```
 
 ### scripts
