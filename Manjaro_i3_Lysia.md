@@ -27,9 +27,14 @@ alias g="git"
 
 ### neovim plugins
 ```
- Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                                                                      
- Plug 'junegunn/fzf.vim'
- 
+call plug#begin('~/.config/nvim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
+call plug#end()
  
 ```
   
@@ -61,6 +66,13 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 ```
+### coc-settings.json (~/.config/nvim/coc-settings.json)
+```
+{
+ "suggest.noselect": false
+}
+```
+
 
 ### scripts
 Watch for git log changes (no color)
