@@ -126,3 +126,18 @@ Don't record duplicates to bash history for better history grepping
 ```
 export HISTCONTROL=ignoreboth:erasedups
 ``` 
+
+### open tmux in git project to start working (combine with tmux script to open splits)
+```
+COLUMNS=12
+
+array=($(ls -d ~/git/*/ | cat))
+
+select name in "${array[@]}"; do
+    echo "Going to $name"
+    cd $name
+    tmux
+    break
+done
+```
+
