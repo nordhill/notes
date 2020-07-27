@@ -120,3 +120,9 @@ git config color.status always
 
 ### resource links
 * Essential keybinds for vim/neovim https://www.youtube.com/watch?v=gZCXaF-Lmco
+
+### bash
+Don't record duplicates to bash history for better history grepping
+```
+export HISTCONTROL=ignoreboth:erasedups
+``` 
