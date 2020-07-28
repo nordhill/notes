@@ -68,10 +68,17 @@ set shiftwidth=2
 "Ignore in searchers
 set wildignore+=**/node_modules/**
 "Copy active file name to clipboard                                                                                                                             
-noremap <silent <F4> :let @+=expand("%:p")<CR>$    
+noremap <silent <F4> :let @+=expand("%:p")<CR>
+"Go to next and previous error with F8 and F9
+nmap <silent> <F8> :ALENext<cr>
+nmap <silent> <F9> :ALEPrevious<cr>
+" Relative numbers
+set nu rnu
+" Open GFiles with Ctrl+p
+noremap <C-p> :GFiles<CR>
 ```
 
-####Experimentals
+#### Experimentals
 ``` 
  Plug 'yuezk/vim-js'                                                                                                                                                              
  Plug 'maxmellon/vim-jsx-pretty'                                                                                                                                                  
