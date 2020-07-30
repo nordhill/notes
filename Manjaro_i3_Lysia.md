@@ -153,3 +153,5 @@ done
 * With Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'} you had to install pynvim via "pip3 install pynvim"
 * ctags was required with vim-js-file-import - this generates tags file that needs to be ignored in git. ctags is not supposed to go to node_modules etc so you need to create ~/.ctags file where you declare ignores e.g --exclude=node_modules
 
+* To have color syntax in fuzzy finder, you need to have bat installed 
+
